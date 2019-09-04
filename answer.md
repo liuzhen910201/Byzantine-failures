@@ -33,6 +33,15 @@ n个将军分隔在不同地方，忠诚的将军想以某种协议达成*一致
     
 ## 证明尝试：n个将军中存在m个叛徒
 ### 情况a：
-  n=4,m=1：4个将军中有一个叛徒
+  n=4,m=1：将军中有一个叛徒
   #### 发令者忠诚的情况，副官有一个叛徒。
+  ![](https://github.com/liuzhen910201/Byzantine-failures/blob/master/m4n1.png)
   
+* 1.发令者向每个副官发送他的值vv给每个副官。
+* 2.副官1执行OM(0)，作为发令者向副官2发送v；由于副官3是叛徒，其执行OM(0)向副官2发送了不同的值，假设为x。
+* 3.副官2拥有的行动值集为{v1,v2,v3}={v,v,x}{v1​,v2​,v3​}={v,v,x}，采用majority函数，副官2采取的行动值为v=majority{v1,v2,v3}v=majority{v1​,v2​,v3​}。
+
+#### 发令者是叛徒，副官没有叛徒
+![](https://github.com/liuzhen910201/Byzantine-failures/blob/master/m4n1_2.png)
+
+
