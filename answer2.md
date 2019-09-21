@@ -42,3 +42,5 @@ v给他的n−1个副官；
 
 ### 情况2.司令官是叛徒
 根据IC1,所有忠诚副官遵循同样的命令，即得到的命令的排列组合相同（无序）
+
+ ![](https://github.com/liuzhen910201/Byzantine-failures/blob/master/m_1_n_1.png)
